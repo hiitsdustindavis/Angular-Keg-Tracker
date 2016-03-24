@@ -1,0 +1,13 @@
+h1 {
+  color: blue;
+}
+keg-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  keg-display {
+    background-color: lighten(tan, 15%);
+    margin: 1rem;
+    padding: 1rem 2rem;
+  }
+}
