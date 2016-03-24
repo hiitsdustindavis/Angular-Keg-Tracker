@@ -4,6 +4,7 @@ h1 {
 keg-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   keg-display {
     background-color: lighten(tan, 15%);
     margin: 1rem;
