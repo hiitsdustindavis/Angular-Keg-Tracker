@@ -5,13 +5,13 @@ import { Keg } from './keg.model';
   selector: 'edit-keg',
   inputs: ['keg'],
   template: `
-    <h3>Edit Mode</h3>
+    <h3 class="editKegTitle">Edit Mode</h3>
     <div class="inputs-keg">
-      <input [(ngModel)]="keg.brand"/>
-      <input [(ngModel)]="keg.name"/>
-      <input [(ngModel)]="keg.price"/>
-      <input [(ngModel)]="keg.abv"/>
-      <input [(ngModel)]="keg.pintsLeft"/>
+      <h3><input class="input-brand" [(ngModel)]="keg.brand"/></h3>
+      <h3><input class="input-name" [(ngModel)]="keg.name"/></h3>
+      <h4><input class="input-price" [(ngModel)]="keg.price"/></h4>
+      <h4><input class="input-keg" [(ngModel)]="keg.abv"/></h4>
+      <h4><input class="input-pintsLeft" [(ngModel)]="keg.pintsLeft"/></h4>
     </div>
   `
 })
