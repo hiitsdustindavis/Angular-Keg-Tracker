@@ -8,18 +8,18 @@ import { EditKegComponent } from './edit-keg.component';
   inputs: ['keg'],
   directives: [PourPintComponent, EditKegComponent],
   template: `
-    <div>
-      <div *ngIf="!selected">
+
+      <div class="keg-info" *ngIf="!selected" [class.red]="keg.pintsLeft <= 10">
+      <pour-pint *ngIf="keg.pintsLeft > 0" [keg]="keg"></pour-pint>
         <h3>{{keg.brand}}</h3>
         <h3>{{keg.name}}</h3>
         <h4>Pint: $ {{keg.price}}</h4>
         <h4>ABV: {{keg.abv}}%</h4>
         <h4>Pints Left: {{keg.pintsLeft}}</h4>
-        <pour-pint [keg]="keg"></pour-pint>
       </div>
-      <button (click)="kegClicked()">Edit Keg</button>
-      <edit-keg *ngIf="selected" [keg]="keg"></edit-keg>
-    </div>
+      <edit-keg class="edit-mode" *ngIf="selected" [keg]="keg"></edit-keg>
+      <button class="button-edit"(click)="kegClicked()">Edit Keg</button>
+    
   `
 })
 

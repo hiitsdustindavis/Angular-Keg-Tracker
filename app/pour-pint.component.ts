@@ -6,7 +6,7 @@ import { Keg } from './keg.model';
   inputs: ['keg'],
   template: `
     <div>
-      <button (click)="pintPoured()">Sell Pint!</button>
+      <button class="button-sell" (click)="pintPoured()">Sell Pint!</button>
     </div>
   `
 })

@@ -20,6 +20,12 @@ export class AppComponent {
     this.kegs = [
       new Keg("High Life", "Miller", 3, 4.9, 0),
       new Keg("Lager", "Anchor Steam", 4.50, 4.0, 1),
+      new Keg("New Beer1", "New Brand 1", 3, 4.9, 0),
+      new Keg("New Beer2", "New Brand 2", 4.50, 4.0, 1),
+      new Keg("New Beer3", "New Brand 3", 3, 4.9, 0),
+      new Keg("New Beer4", "New Brand 4", 4.50, 4.0, 1),
+      new Keg("New Beer5", "New Brand 5", 3, 4.9, 0),
+      new Keg("New Beer6", "New Brand 6", 4.50, 4.0, 1),
     ]
   }
 }
